@@ -1,0 +1,67 @@
+.WishList {
+    min-height: calc(100vh - (80px + 105px));
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .Products {
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .Product {
+            background: #fff;
+            max-width: 300px;
+            width: 100%;
+            height: 400px;
+            min-width: 200px;
+            border-radius: 15px;
+            padding: 20px;
+            margin:  40px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 50px 10px rgba(0 ,0 , 0, 0.3);
+            transition: 0.2s;
+    
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 100px 15px rgba(0 ,0 , 0, 0.3);
+                transition: 0.2s;
+            }
+    
+            .img {
+                max-width: 37%;
+                margin: 20px 0;
+            }
+    
+            .Buy {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .NoneProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .WishList {
+        .Products {
+            .Product {
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.Button {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 11pt;
+
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 3px #1b1b1b, 0 0 0 5px white;
+        transition: 0.3s;
+    }
+}

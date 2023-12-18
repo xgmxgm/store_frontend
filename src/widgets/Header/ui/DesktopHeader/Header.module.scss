@@ -1,0 +1,44 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(27, 27, 27, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+
+    .Logo {
+        margin-left: 40px;
+        
+        .h2 {
+            color: white;
+        }
+    }
+
+    .Nav {
+        
+        .nav .a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                font-size: 14pt;
+                border-bottom: 2px solid white;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .LogIn {
+        .a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

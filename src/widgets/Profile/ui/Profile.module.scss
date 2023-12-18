@@ -1,0 +1,10 @@
+.Profile {
+    min-height: calc(100vh - (80px + 105px));
+    text-align: center;
+    padding-top: 95px;
+
+    .img {
+        border-radius: 100%;
+        max-width: 200px;
+    }
+}

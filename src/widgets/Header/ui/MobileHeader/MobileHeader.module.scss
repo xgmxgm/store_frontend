@@ -1,0 +1,107 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(27, 27, 27, 0.95);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+    .Logo {
+        margin-left: 20px;
+        .h2 {
+            color: white;
+        }
+    }
+
+    .Burger {
+        cursor: pointer;
+        margin-right: 20px;
+
+        .Line {
+            background: white;
+            width: 40px;
+            height: 4px;
+            margin: 7px 0px;
+            border-radius: 25px;
+        }
+    }
+
+    .BurgerMain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1b1b1b;
+        font-size: 13pt;
+        animation: open 1s 1;
+    }
+
+    .BurgerContent {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .Nav {
+            margin-bottom: 50px;
+
+            .nav {
+                display: flex;
+                flex-direction: column;
+                
+                .a {
+                    margin: 10px;
+                    text-decoration: none;
+                    color: white;
+        
+                    &:hover {
+                        font-size: 14pt;
+                        border-bottom: 2px solid white;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+
+        .LogIn {
+            display: flex;
+            flex-direction: column;
+
+            .h3 {
+                color: white;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+
+            .a {
+                margin: 0px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .Email {
+            color: white;
+            margin-top: 50px;
+            
+            .h3 {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@keyframes open {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
